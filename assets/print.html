@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>MENDES DOS SANTOS Alexandre - Senior Backend Engineer</title>
+    <title>MENDES DOS SANTOS Alexandre - Senior Software Engineer & SaaS Founder</title>
     <meta name="description"
         content="Senior Backend Software Engineer with 6+ years of experience in distributed systems, cloud architecture, and enterprise solutions">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -376,13 +376,13 @@
         @media print {
             @page {
                 size: A4;
-                margin: 15mm;
+                margin: 12mm;
             }
 
             body {
                 background-color: white;
                 padding: 0;
-                font-size: 11pt;
+                font-size: 10pt;
             }
 
             #container--main {
@@ -409,26 +409,98 @@
                 widows: 3;
             }
 
+            /* Make intro section more compact */
             #wrapper--intro {
                 page-break-after: avoid;
+                margin-bottom: 12px;
+                padding-bottom: 12px;
             }
 
+            #profile-pic {
+                width: 80px;
+                height: 80px;
+            }
+
+            #user-name {
+                font-size: 1.6rem;
+                margin-bottom: 4px;
+            }
+
+            #bio {
+                font-size: 0.9rem;
+                margin-bottom: 2px;
+            }
+
+            #email {
+                font-size: 0.8rem;
+                margin-top: 4px;
+            }
+
+            /* Make credentials section more compact */
             #credentials-section {
                 page-break-after: avoid;
+                margin-bottom: 15px;
             }
 
+            .two-column-layout {
+                gap: 20px;
+            }
+
+            .education-block {
+                padding: 12px;
+            }
+
+            .degree-item {
+                margin-bottom: 12px;
+                padding-bottom: 12px;
+            }
+
+            .degree-item strong {
+                font-size: 0.9rem;
+                margin-bottom: 2px;
+            }
+
+            .degree-details {
+                font-size: 0.8rem;
+                margin-bottom: 2px;
+            }
+
+            .degree-focus {
+                font-size: 0.75rem;
+            }
+
+            /* Make qualifications list more compact */
+            #qualifications--list li {
+                margin-bottom: 3px;
+                padding-left: 15px;
+                line-height: 1.4;
+                font-size: 0.85rem;
+            }
+
+            /* Make tech stack more compact */
             .section--page {
                 page-break-inside: avoid;
+                margin-bottom: 15px;
             }
 
             h2 {
                 page-break-after: avoid;
-                margin-top: 15px;
+                margin-top: 10px;
+                margin-bottom: 10px;
+                font-size: 1.1rem;
+                padding-bottom: 4px;
+            }
+
+            .card--techstack {
+                padding: 4px 8px;
+                font-size: 0.8rem;
+                margin-bottom: 4px;
             }
 
             /* Ensure tech stack stays together */
             #wrapper--techstack__items {
                 page-break-inside: avoid;
+                gap: 4px;
             }
 
             /* Keep education items together */
@@ -456,6 +528,16 @@
             #work-history-wrapper:last-of-type .card--work-history {
                 page-break-inside: avoid;
             }
+
+            /* Make socials section more compact */
+            #socials--list {
+                margin-bottom: 10px;
+            }
+
+            #socials--list a {
+                font-size: 0.8rem;
+                padding: 2px 0;
+            }
         }
     </style>
 </head>
@@ -467,8 +549,8 @@
             <img id="profile-pic" src="./profile.jpg">
             <div>
                 <h1 id="user-name">MENDES DOS SANTOS Alexandre</h1>
-                <p id="bio">Senior Backend Software Engineer</p>
-                <p id="bio">Distributed Systems | Cloud Architecture | API Design</p>
+                <p id="bio">Senior Software Engineer & SaaS Founder</p>
+                <p id="bio">Distributed Systems | Cloud Architecture | Full-Stack Development | SaaS Products</p>
                 <p id="email">✉ alex.mendes0912@gmail.com</p>
             </div>
         </section>
@@ -482,6 +564,9 @@
                             d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
                     </svg>
                     LinkedIn
+                </a>
+                <a href="https://match-ats.com/" target="_blank">
+                    🚀 MatchATS
                 </a>
             </div>
         </section>
@@ -508,10 +593,12 @@
                     <h2>Core Competencies</h2>
                     <ul id="qualifications--list">
                         <li>6+ Years architecting and implementing scalable backend systems</li>
+                        <li>Built and launched production SaaS platform serving HR professionals</li>
                         <li>Expert in RESTful API design, microservices architecture, and event-driven systems</li>
-                        <li>Proven track record in banking, fintech, and transportation tech sectors</li>
+                        <li>Full-stack development experience with modern web technologies</li>
+                        <li>Proven track record in banking, fintech, transportation tech, and AI-powered solutions</li>
                         <li>Strong experience with cloud-native applications and serverless architectures</li>
-                        <li>Bilingual: English (Professional) & French (Native)</li>
+                        <li>Bilingual: English (Fluent) & French (Native)</li>
                         <li>EU-based with Swiss work authorization</li>
                     </ul>
                 </div>
@@ -523,9 +610,10 @@
             <div id="wrapper--techstack__items">
                 <div class="card--techstack"><span><strong>Languages:</strong> Java 8-21+, TypeScript, JavaScript, Go, C#</span></div>
                 <div class="card--techstack"><span><strong>Backend:</strong> Spring Boot, Spring Cloud, Quarkus, Express.js, GraphQL</span></div>
-                <div class="card--techstack"><span><strong>Cloud & DevOps:</strong> AWS (Lambda, API Gateway, DynamoDB, S3, CloudFormation), Docker, Kubernetes</span></div>
+                <div class="card--techstack"><span><strong>Frontend:</strong> Next.js, React, Angular, Tailwind CSS</span></div>
+                <div class="card--techstack"><span><strong>Cloud & DevOps:</strong> AWS (Lambda, API Gateway, DynamoDB, S3, CloudFormation), Vercel, Docker, Kubernetes</span></div>
                 <div class="card--techstack"><span><strong>Databases:</strong> PostgreSQL, MySQL, Oracle, DynamoDB, Redis</span></div>
-                <div class="card--techstack"><span><strong>Messaging & Auth:</strong> Apache Kafka, RabbitMQ, Keycloak, OAuth2, JWT</span></div>
+                <div class="card--techstack"><span><strong>Messaging & Auth:</strong> Apache Kafka, RabbitMQ, Clerk, Keycloak, OAuth2, JWT</span></div>
                 <div class="card--techstack"><span><strong>Tools:</strong> Git, Jenkins, GitLab CI/CD, JMX, Datadog, ELK Stack</span></div>
             </div>
         </section>
@@ -535,6 +623,39 @@
 
             <div class="card--work-history">
                 <strong>🚧 Senior Backend Engineer | SNCF Connect - France (Remote)</strong>
+                <p>Jan 2024 - Aug 2024</p>
+                <p><em>National railway ticketing platform serving 15M+ monthly active users</em></p>
+                <ul>
+                    <li>Architected and implemented serverless microservices for real-time train booking and seat reservation systems using AWS Lambda, API Gateway, and DynamoDB</li>
+                    <li>Led the migration of legacy monolithic ticketing services to event-driven architecture using AWS EventBridge and SQS, reducing latency and improving system resilience</li>
+                    <li>Designed and developed RESTful APIs for multi-modal transportation integration (train, bus, car-sharing), implementing circuit breakers and retry patterns for third-party service reliability</li>
+                    <li>Implemented Infrastructure as Code using AWS CDK and CloudFormation, automating deployment pipelines and reducing deployment time from hours to minutes</li>
+                    <li>Optimized DynamoDB data models and query patterns</li>
+                    <li>Built real-time pricing engine with dynamic fare calculation based on demand, time, and availability using AWS Step Functions for complex workflow orchestration</li>
+                    <li>Established comprehensive monitoring and alerting using CloudWatch and X-Ray, improving incident detection time</li>
+                    <li>Collaborated with cross-functional teams in a fully remote environment, participating in architecture reviews and mentoring junior developers</li>
+                </ul>
+                <p><strong>Tech Stack:</strong> Node.js/TypeScript, AWS Lambda, DynamoDB, API Gateway, EventBridge, Step Functions, CDK, CloudFormation</p>
+            </div>
+
+            <div class="card--work-history">
+                <strong>🚀 Senior Software Engineer & SaaS Founder</strong>
+                <p><em>AI-powered recruitment platform serving HR professionals and recruiters</em></p>
+                <ul>
+                    <li>Built and launched MatchATS, a production SaaS platform that helps HR teams screen candidates in seconds using AI-powered resume matching</li>
+                    <li>Architected full-stack application using Next.js, TypeScript, and Tailwind CSS for responsive, modern user interface</li>
+                    <li>Implemented advanced AI features including compatibility scoring, interview question generation, and skill gap analysis</li>
+                    <li>Integrated Clerk authentication system for secure user management and seamless onboarding experience</li>
+                    <li>Deployed and scaled on Vercel platform with optimized performance and global CDN distribution</li>
+                    <li>Designed user-centric features like hard skill compatibility analysis and industry profile matching</li>
+                    <li>Built comprehensive candidate screening workflows that transform hours of manual review into automated insights</li>
+                </ul>
+                <p><strong>Tech Stack:</strong> Next.js, TypeScript, Tailwind CSS, Clerk Auth, Vercel, AI/ML APIs</p>
+                <p><strong>Product:</strong> match-ats.com</p>
+            </div>
+
+            <div class="card--work-history">
+                <strong>🚧 Backend Software Engineer | Capgemini - Switzerland</strong>
                 <p>Jan 2024 - Aug 2024</p>
                 <p><em>National railway ticketing platform serving 15M+ monthly active users</em></p>
                 <ul>
@@ -629,10 +750,13 @@
             <h2>Personal Projects & Continuous Learning</h2>
 
             <div class="card--work-history">
-                <strong>🎮 Game Development with Godot Engine</strong>
+                <strong>🚀 MatchATS - AI-Powered Resume Matching SaaS</strong>
+                <p><strong>Product:</strong> match-ats.com</p>
                 <ul>
-                    <li>Developing multiplayer game backend using C# and GDScript</li>
-                    <li>Implementing real-time synchronization and state management</li>
+                    <li>Full-stack SaaS platform that revolutionizes HR candidate screening with AI-powered matching</li>
+                    <li>Features include compatibility scoring, interview question generation, and skill gap analysis</li>
+                    <li>Built with modern tech stack: Next.js, TypeScript, Tailwind CSS, Clerk Auth, deployed on Vercel</li>
+                    <li>Solves the time-consuming problem of manual resume screening for HR professionals</li>
                 </ul>
             </div>
 
@@ -641,6 +765,14 @@
                 <ul>
                     <li>Built TypeScript ETL pipeline processing 500K+ accident records</li>
                     <li>Developed interactive data visualization dashboard with Chart.js</li>
+                </ul>
+            </div>
+
+            <div class="card--work-history">
+                <strong>🎮 Game Development with Godot Engine</strong>
+                <ul>
+                    <li>Developing multiplayer game backend using C# and GDScript</li>
+                    <li>Implementing real-time synchronization and state management</li>
                 </ul>
             </div>
 
